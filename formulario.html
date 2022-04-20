@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+        <title>Anamnese Fensor</title>
+        
+    </head>
+    <body>
+        <div>
+            <h1 id="titulo">Formulário de Anamnese</h1>
+            <p id="subtitulo">Preencha aqui todas as infomrações do aluno</p>
+            <br>
+        </div>
+        <!-- Inicio do Formulário-->
+        <form>
+
+            <fieldset class="grupo">
+                <div class="campo">
+                <label for="atleta"><strong>Atleta</strong></label>
+                <input type="text" name="Atleta" id="atleta" required>
+                </div>
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset>
+            
+            <div class="campo">
+                <label for="sobrenome"><strong>Email</strong></label>
+                <input type="text" name="email" id="email" required>
+            </div>
+
+
+            <div class="campo">
+                <label><strong>Lateralidade</strong></label>
+                <label>
+                    <input  type="radio" name="lateralidade" value="destro">Destro
+                </label>
+                <label>
+                    <input  type="radio" name="lateralidade" value="canhoto">Canhoto
+                </label>
+                <label>
+                    <input  type="radio" name="lateralidade" value="ambidestro">Ambidestro
+                </label>    
+            </div>
+
+            <div class="campo">
+                <label for="sexo"><strong>sexo</strong></label>
+                <select id="sexo" required>
+                    <option selected disabled value="">Selecione</option>
+                    <option>Masculino</option>
+                    <option>feminino</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+                <div id="check">
+                    <label> <strong>Quais times vc gosta? </strong></label><br><br>
+                    <input  type="checkbox" id="time01" name="time01"   value="Galo">
+                    <label  for="time01">Galo</label>
+                    <input  type="checkbox" id="time02" name="time02"   value="Palmeiras">
+                    <label  for="time02">Palmeiras</label>
+                    <input  type="checkbox" id="time03" name="time03"   value="Fluminense">
+                    <label  for="time03">Fluminense</label>
+                    <input  type="checkbox" id="time04" name="time04"   value="Sao Paulo">
+                    <label  for="time04">Sao Paulo</label>
+                    <input  type="checkbox" id="time05" name="time05"   value="Ceara">
+                    <label  for="time05">Ceara</label>
+                </div>
+
+            </fieldset>
+
+                <div class="campo">
+                    <br>
+                    <label for="curriculo"><strong>Conte sua experiencia</strong></label>
+                    <textarea rows="6"  style="width: 30em" id="curriculo" name="curriculo"></textarea>
+                    <br>
+                </div>
+
+                <br>  <br>  <br>
+                
+                <button class="botao" type="Submit" onsubmit="">Enviar</button>
+
+            
+        </form>
+
+    </body>
+
+</html>
